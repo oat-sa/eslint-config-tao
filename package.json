@@ -1,0 +1,29 @@
+{
+  "name": "@oat-sa/eslint-config-tao",
+  "version": "0.1.0",
+  "description": "Shareable `.eslintrc` configurations package for `oat-sa` projects.",
+  "main": "index.js",
+  "scripts": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/oat-sa/eslint-config-tao.git"
+  },
+  "keywords": [
+    "tao",
+    "oat",
+    "eslint"
+  ],
+  "author": {
+    "name": "Ihar Suleimanau",
+    "email": "ihar@taotesting.com",
+    "url": "https://taotesting.com"
+  },
+  "license": "GPL-2.0-only",
+  "bugs": {
+    "url": "https://github.com/oat-sa/eslint-config-tao/issues"
+  },
+  "homepage": "https://github.com/oat-sa/eslint-config-tao#readme",
+  "publishConfig": {
+    "access": "public"
+  }
+}
