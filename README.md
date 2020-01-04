@@ -37,7 +37,7 @@ Lets take a `oat-sa/live-design-system`.
 1. Edit the `.eslintrc.js` in the root of the project:
 ```javascript
 module.exports = {
-    extends: "./node_modules/@oat-sa/eslint-config-tao/config/tao-new/eslintrc.js"
+    extends: "./node_modules/@oat-sa/eslint-config-tao/config/tao-new/.eslintrc.js"
 }
 ```
 2. run `npm install`.
