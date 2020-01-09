@@ -1,4 +1,4 @@
-{
+module.exports = {
   "env" : {
     "browser" : true,
     "es6" : true,
@@ -73,4 +73,4 @@
     "strict" :                      ["error", "function"],
     "vars-on-top" :                 ["error"]
   }
-}
+};

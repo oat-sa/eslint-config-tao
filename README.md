@@ -10,37 +10,31 @@ General idea is described here: [https://eslint.org/docs/developer-guide/shareab
 
 ### Examples
 
-There're 2 ways to use the appropriate `.eslintrc` config in the project you want:
-- via `npm postinstall script`
-- extending your current `.eslintrc` config.
+Use shareable eslint configurations via the `extends` config property.
 
-#### NPM postintall script
+1. Default configuration. Edit the `.eslintrc.js` of your project:
 
-Lets take a `oat-sa/package-tao` project.
+    ```javascript
+    module.exports = {
+        extends: "./node_modules/@oat-sa/eslint-config-tao"
+    }
+    ```
 
-1. Edit the `tao/views/package.josn` file
-2. Add the `postinstall` script:
-```json
-{
-  "scripts": {
-    "postinstall": "cp $INIT_CWD/node_modules/@oat-sa/eslint-config-tao/config/tao-amd/.eslintrc ../../.eslintrc"
-  }
-}
-``` 
-3. run `npm install`.
-4. `.eslintrc` should be copied to the project root directory. 
+2. Configuration for AMD modules:
 
-#### Extend current `.eslintrc` config
+    ```javascript
+    module.exports = {
+        extends: "./node_modules/@oat-sa/eslint-config-tao/amd"
+    }
+    ```
 
-Lets take a `oat-sa/live-design-system`.
+3. Configuration for es modules, svelte, etc.:
 
-1. Edit the `.eslintrc.js` in the root of the project:
-```javascript
-module.exports = {
-    extends: "./node_modules/@oat-sa/eslint-config-tao/config/tao-new/.eslintrc.js"
-}
-```
-2. run `npm install`.
+    ```javascript
+    module.exports = {
+        extends: "./node_modules/@oat-sa/eslint-config-tao/svelte"
+    }
+    ```
 
 ## Release history
  
