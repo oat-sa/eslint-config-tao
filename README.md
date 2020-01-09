@@ -16,7 +16,7 @@ Use shareable eslint configurations via the `extends` config property.
 
     ```javascript
     module.exports = {
-        extends: "./node_modules/@oat-sa/eslint-config-tao"
+        extends: "@oat-sa/eslint-config-tao"
     }
     ```
 
@@ -24,7 +24,7 @@ Use shareable eslint configurations via the `extends` config property.
 
     ```javascript
     module.exports = {
-        extends: "./node_modules/@oat-sa/eslint-config-tao/amd"
+        extends: "@oat-sa/eslint-config-tao/amd"
     }
     ```
 
@@ -32,7 +32,7 @@ Use shareable eslint configurations via the `extends` config property.
 
     ```javascript
     module.exports = {
-        extends: "./node_modules/@oat-sa/eslint-config-tao/svelte"
+        extends: "@oat-sa/eslint-config-tao/svelte"
     }
     ```
 
