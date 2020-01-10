@@ -31,5 +31,11 @@
     "eslint-plugin-jest": "^23.0.3",
     "eslint-plugin-jsdoc": "^17.1.2",
     "eslint-plugin-svelte3": "^2.7.3"
+  },
+  "devDependencies": {
+    "eslint-plugin-es": "^2.0.0",
+    "eslint-plugin-jest": "^23.0.3",
+    "eslint-plugin-jsdoc": "^17.1.2",
+    "eslint-plugin-svelte3": "^2.7.3"
   }
 }
