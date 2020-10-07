@@ -1,6 +1,6 @@
 {
   "name": "@oat-sa/eslint-config-tao",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Shareable `.eslintrc` configurations package for `oat-sa` projects.",
   "main": "index.js",
   "scripts": {},
@@ -14,8 +14,7 @@
     "eslint"
   ],
   "author": {
-    "name": "Ihar Suleimanau",
-    "email": "ihar@taotesting.com",
+    "name": "OAT SA",
     "url": "https://taotesting.com"
   },
   "license": "GPL-2.0-only",
@@ -27,7 +26,7 @@
     "access": "public"
   },
   "peerDependencies": {
-    "eslint-plugin-es": "^3.0.0",
-    "eslint-plugin-jsdoc": "^20.3.0"
+    "eslint-plugin-es": ">=3.0.0",
+    "eslint-plugin-jsdoc": ">=20.3.0"
   }
 }

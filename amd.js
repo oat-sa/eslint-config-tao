@@ -70,7 +70,6 @@ module.exports = {
         'prefer-spread': ['error'],
         'prefer-template': ['error'],
         semi: ['error', 'always'],
-        strict: ['error', 'function'],
         'vars-on-top': ['error']
     }
 };
