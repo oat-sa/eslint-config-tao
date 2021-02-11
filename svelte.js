@@ -33,7 +33,7 @@ module.exports = {
         'implicit-arrow-linebreak': ['error'],
         indent: ['warn', 4, { SwitchCase: 1, MemberExpression: 'off' }],
         'jsdoc/check-alignment': ['warn'],
-        'jsdoc/check-param-names': ['warn'],
+        'jsdoc/check-param-names': ['warn', { disableExtraPropertyReporting: true }],
         'jsdoc/require-param': ['warn'],
         'jsdoc/require-param-name': ['warn'],
         'jsdoc/require-param-type': ['warn'],
