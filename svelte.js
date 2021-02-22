@@ -30,7 +30,6 @@ module.exports = {
         'es/no-classes': ['error'],
         'es/no-generators': ['error'],
         'func-call-spacing': ['error'],
-        'implicit-arrow-linebreak': ['error'],
         indent: ['warn', 4, { SwitchCase: 1, MemberExpression: 'off' }],
         'jsdoc/check-alignment': ['warn'],
         'jsdoc/check-param-names': ['warn', { disableExtraPropertyReporting: true }],
