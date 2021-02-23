@@ -8,7 +8,7 @@ module.exports = {
     plugins: ['es', 'jsdoc', 'svelte3', 'jest'],
     parserOptions: {
         sourceType: 'module',
-        ecmaVersion: 2015
+        ecmaVersion: 2020
     },
     overrides: [
         {
