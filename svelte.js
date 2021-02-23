@@ -6,9 +6,10 @@ module.exports = {
         'jest/globals': true
     },
     plugins: ['es', 'jsdoc', 'svelte3', 'jest'],
+    parser: 'babel-eslint',
     parserOptions: {
         sourceType: 'module',
-        ecmaVersion: 2020
+        ecmaVersion: 2015
     },
     overrides: [
         {
