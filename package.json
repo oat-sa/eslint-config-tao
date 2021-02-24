@@ -25,6 +25,9 @@
   "publishConfig": {
     "access": "public"
   },
+  "dependencies": {
+    "babel-eslint": "^10.1.0"
+  },
   "peerDependencies": {
     "eslint-plugin-es": ">=3.0.0",
     "eslint-plugin-jsdoc": ">=20.3.0"
