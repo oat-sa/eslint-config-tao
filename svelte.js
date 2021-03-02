@@ -6,6 +6,7 @@ module.exports = {
         'jest/globals': true
     },
     plugins: ['es', 'jsdoc', 'svelte3', 'jest'],
+    parser: 'babel-eslint',
     parserOptions: {
         sourceType: 'module',
         ecmaVersion: 2015
