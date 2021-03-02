@@ -1,6 +1,6 @@
 # eslint-config-tao
 
-Shareable `.eslintrc` configurations package for `oat-sa` projects.
+Shareable `.eslintrc.js` configurations package for `oat-sa` projects.
 
 ## Concept
 
@@ -14,40 +14,34 @@ Use shareable eslint configurations via the `extends` config property.
 
 1. Default configuration. Edit the `.eslintrc.js` of your project:
 
-    ```javascript
-    module.exports = {
-        extends: "@oat-sa/eslint-config-tao"
-    }
-    ```
+   ```javascript
+   module.exports = {
+     extends: '@oat-sa/eslint-config-tao',
+   };
+   ```
 
 2. Configuration for AMD modules:
 
-    ```javascript
-    module.exports = {
-        extends: "@oat-sa/eslint-config-tao/amd"
-    }
-    ```
-
-    Recommended plugins to be installed:
-    - `eslint-plugin-es`
-    - `eslint-plugin-jsdoc`
+   ```javascript
+   module.exports = {
+     extends: '@oat-sa/eslint-config-tao/amd',
+   };
+   ```
 
 3. Configuration for es modules, svelte, etc.:
 
-    ```javascript
-    module.exports = {
-        extends: "@oat-sa/eslint-config-tao/svelte"
-    }
-    ```
+   ```javascript
+   module.exports = {
+     extends: '@oat-sa/eslint-config-tao/svelte',
+   };
+   ```
 
-    Recommended plugins to be installed:
-    - `eslint-plugin-es`
-    - `eslint-plugin-jsdoc`
-    - `eslint-plugin-jest`
-    - `eslint-plugin-svelte3`
-
-If you forget about recommended eslint plugins, you'll get a warning with the proper versions to install.
-
-## Release history
+4. Configuration for node:
+   ```javascript
+   module.exports = {
+     extends: '@oat-sa/eslint-config-tao/node',
+   };
+   ```
 
 - _0.1.0_ Initial release.
+- _1.0.0_ Added the support of the node config, include all plugins as dependencies, turn off `implicit-arrow-linebreak`

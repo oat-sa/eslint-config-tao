@@ -1,21 +1,16 @@
 module.exports = {
     env: {
-        browser: true,
         es6: true,
-        amd: true,
-        qunit: true,
-        node: true
+        node: true,
+        'jest/globals': true
     },
-    globals: {
-        ENVIRONMENT: true
-    },
-    plugins: ['es', 'jsdoc'],
+    plugins: ['es', 'jsdoc', 'jest'],
     parserOptions: {
         sourceType: 'module',
-        ecmaVersion: 2015,
-        ecmaFeatures: {
-            experimentalObjectRestSpread: true
-        }
+        ecmaVersion: 2015
+    },
+    overrides: [],
+    settings: {
     },
     extends: 'eslint:recommended',
     rules: {
