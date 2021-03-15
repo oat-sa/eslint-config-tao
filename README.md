@@ -43,7 +43,7 @@ Use shareable eslint configurations via the `extends` config property.
    };
    ```
 
-4. Configuration for cypress:
+5. Configuration for cypress:
    ```javascript
    module.exports = {
      extends: '@oat-sa/eslint-config-tao/cypress'
