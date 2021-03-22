@@ -18,7 +18,7 @@ module.exports = {
         }
     ],
     settings: {
-      'svelte3/ignore-styles': () => true
+        'svelte3/ignore-styles': () => true
     },
     extends: 'eslint:recommended',
     rules: {
