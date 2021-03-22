@@ -6,7 +6,7 @@ module.exports = {
         'cypress/globals': true,
     },
     plugins: ['es', 'cypress'],
-    parser: 'babel-eslint',
+    parser: '@babel/eslint-parser',
     parserOptions: {
         sourceType: 'module',
         ecmaVersion: 2015,
