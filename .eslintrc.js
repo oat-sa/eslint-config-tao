@@ -1,3 +1,4 @@
 module.exports = {
-  extends: '@oat-sa/eslint-config-tao/node'
+    extends: './node.js',
+    root: true
 };

@@ -6,7 +6,7 @@ module.exports = {
         'jest/globals': true
     },
     plugins: ['es', 'jsdoc', 'svelte3', 'jest'],
-    parser: 'babel-eslint',
+    parser: '@babel/eslint-parser',
     parserOptions: {
         sourceType: 'module',
         ecmaVersion: 2015
@@ -18,7 +18,7 @@ module.exports = {
         }
     ],
     settings: {
-      'svelte3/ignore-styles': () => true
+        'svelte3/ignore-styles': () => true
     },
     extends: 'eslint:recommended',
     rules: {
