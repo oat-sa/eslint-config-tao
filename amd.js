@@ -10,6 +10,7 @@ module.exports = {
         ENVIRONMENT: true
     },
     plugins: ['es', 'jsdoc'],
+    parser: '@babel/eslint-parser',
     parserOptions: {
         sourceType: 'module',
         ecmaVersion: 2015,
