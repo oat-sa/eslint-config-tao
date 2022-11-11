@@ -9,8 +9,10 @@ module.exports = {
         Cypress: true,
         cy: true
     },
+    parser: '@babel/eslint-parser',
     parserOptions: {
-        sourceType: 'module'
+        sourceType: 'module',
+        requireConfigFile: false
     },
     extends: 'eslint:recommended',
     rules: {
