@@ -54,4 +54,5 @@ Use shareable eslint configurations via the `extends` config property.
 
 - _0.1.0_ Initial release.
 - _1.0.0_ Added the support of the `node` config, include all plugins as dependencies, turn off `implicit-arrow-linebreak`
-  - _1.1.0_ Added the `cypress` profile 
+  - _1.1.0_ Added the `cypress` profile
+- _2.0.0_ Updated `eslint-plugin-jsdoc` and `eslint` to address vulnerabilities; updated `eslint-plugin-jest` to address compatibility issue
