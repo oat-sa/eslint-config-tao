@@ -2,15 +2,18 @@ module.exports = {
     env: {
         es6: true,
         node: true,
+        es2024: true,
         'jest/globals': true
     },
     plugins: ['es', 'jsdoc', 'jest'],
     parserOptions: {
-        sourceType: 'module',
-        ecmaVersion: 2015
+        sourceType: 'module'
     },
     overrides: [],
     settings: {
+        jsdoc: {
+            mode: "jsdoc"
+        }
     },
     extends: 'eslint:recommended',
     rules: {

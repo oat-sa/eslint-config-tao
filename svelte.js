@@ -3,24 +3,26 @@ module.exports = {
         browser: true,
         es6: true,
         node: true,
+        es2024: true,
         'jest/globals': true
     },
-    plugins: ['es', 'jsdoc', 'svelte3', 'jest'],
+    extends: ['eslint:recommended','plugin:svelte/prettier'],
+    plugins: ['es', 'jsdoc', 'jest'],
     parser: '@babel/eslint-parser',
     parserOptions: {
-        sourceType: 'module',
-        ecmaVersion: 2015
+        sourceType: 'module'
     },
     overrides: [
-        {
-            files: ['**/*.svelte'],
-            processor: 'svelte3/svelte3'
-        }
+      {
+        files: ['*.svelte'],
+        parser: 'svelte-eslint-parser'
+      }
     ],
     settings: {
-        'svelte3/ignore-styles': () => true
+        jsdoc: {
+            mode: "jsdoc"
+        }
     },
-    extends: 'eslint:recommended',
     rules: {
         'array-bracket-newline': ['warn', 'consistent'],
         'arrow-body-style': ['error', 'as-needed'],
