@@ -53,4 +53,4 @@ Use shareable eslint configurations via the `extends` config property.
 
 ## Change log
 
-See changelog [here](./README.md)
+See changelog [here](./CHANGELOG.md)
