@@ -1,26 +1,25 @@
 module.exports = {
     env: {
         browser: true,
-        es6: true,
         node: true,
         es2024: true,
         'jest/globals': true
     },
-    extends: ['eslint:recommended','plugin:svelte/prettier'],
+    extends: ['eslint:recommended'],
     plugins: ['es', 'jsdoc', 'jest'],
     parser: '@babel/eslint-parser',
     parserOptions: {
         sourceType: 'module'
     },
     overrides: [
-      {
-        files: ['*.svelte'],
-        parser: 'svelte-eslint-parser'
-      }
+        {
+            files: ['*.svelte'],
+            parser: 'svelte-eslint-parser'
+        }
     ],
     settings: {
         jsdoc: {
-            mode: "jsdoc"
+            mode: 'jsdoc'
         }
     },
     rules: {

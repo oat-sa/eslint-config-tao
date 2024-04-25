@@ -1,6 +1,5 @@
 module.exports = {
     env: {
-        es6: true,
         node: true,
         es2024: true,
         'jest/globals': true
@@ -12,7 +11,7 @@ module.exports = {
     overrides: [],
     settings: {
         jsdoc: {
-            mode: "jsdoc"
+            mode: 'jsdoc'
         }
     },
     extends: 'eslint:recommended',

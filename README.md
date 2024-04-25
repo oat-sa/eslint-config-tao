@@ -16,7 +16,7 @@ Use shareable eslint configurations via the `extends` config property.
 
    ```javascript
    module.exports = {
-     extends: '@oat-sa/eslint-config-tao'
+     extends: "@oat-sa/eslint-config-tao",
    };
    ```
 
@@ -24,7 +24,7 @@ Use shareable eslint configurations via the `extends` config property.
 
    ```javascript
    module.exports = {
-     extends: '@oat-sa/eslint-config-tao/amd'
+     extends: "@oat-sa/eslint-config-tao/amd",
    };
    ```
 
@@ -32,27 +32,25 @@ Use shareable eslint configurations via the `extends` config property.
 
    ```javascript
    module.exports = {
-     extends: '@oat-sa/eslint-config-tao/svelte'
+     extends: "@oat-sa/eslint-config-tao/svelte",
    };
    ```
 
 4. Configuration for node:
+
    ```javascript
    module.exports = {
-     extends: '@oat-sa/eslint-config-tao/node'
+     extends: "@oat-sa/eslint-config-tao/node",
    };
    ```
 
 5. Configuration for cypress:
    ```javascript
    module.exports = {
-     extends: '@oat-sa/eslint-config-tao/cypress'
+     extends: "@oat-sa/eslint-config-tao/cypress",
    };
    ```
 
-## History
+## Change log
 
-- _0.1.0_ Initial release.
-- _1.0.0_ Added the support of the `node` config, include all plugins as dependencies, turn off `implicit-arrow-linebreak`
-  - _1.1.0_ Added the `cypress` profile
-- _2.0.0_ Updated `eslint-plugin-jsdoc` and `eslint` to address vulnerabilities; updated `eslint-plugin-jest` to address compatibility issue
+See changelog [here](./README.md)
