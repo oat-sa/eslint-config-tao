@@ -2,10 +2,9 @@ module.exports = {
     env: {
         browser: true,
         node: true,
-        es2024: true,
-        'cypress/globals': true,
+        es2024: true
     },
-    plugins: ['es', 'cypress'],
+    plugins: ['es'],
     parser: '@babel/eslint-parser',
     parserOptions: {
         sourceType: 'module'
@@ -16,19 +15,19 @@ module.exports = {
     rules: {
         'array-bracket-newline': ['warn', 'consistent'],
         'arrow-body-style': ['error', 'as-needed'],
-        'arrow-spacing': ['warn', {before: true, after: true}],
+        'arrow-spacing': ['warn', { before: true, after: true }],
         'brace-style': ['warn', '1tbs'],
         'consistent-this': ['error', 'self'],
         eqeqeq: ['error', 'smart'],
         'es/no-classes': ['error'],
         'es/no-generators': ['error'],
         'func-call-spacing': ['error'],
-        indent: ['warn', 4, {SwitchCase: 1, MemberExpression: 'off'}],
+        indent: ['warn', 4, { SwitchCase: 1, MemberExpression: 'off' }],
         'linebreak-style': ['error', 'unix'],
         'new-parens': ['error'],
         'no-alert': ['error'],
         'no-caller': ['error'],
-        'no-confusing-arrow': ['error', {allowParens: false}],
+        'no-confusing-arrow': ['error', { allowParens: false }],
         'no-console': ['error'],
         'no-debugger': ['error'],
         'no-duplicate-imports': ['error'],
@@ -43,12 +42,12 @@ module.exports = {
         'no-script-url': ['error'],
         'no-self-compare': ['error'],
         'no-sequences': ['error'],
-        'no-shadow': ['error', {hoist: 'functions'}],
+        'no-shadow': ['error', { hoist: 'functions' }],
         'no-template-curly-in-string': ['error'],
         'no-throw-literal': ['error'],
         'no-trailing-spaces': ['error'],
         'no-undefined': ['error'],
-        'no-use-before-define': ['error', {functions: false}],
+        'no-use-before-define': ['error', { functions: false }],
         'no-useless-call': ['error'],
         'no-useless-computed-key': ['error'],
         'no-useless-rename': ['error'],
@@ -56,6 +55,6 @@ module.exports = {
         'prefer-spread': ['error'],
         'prefer-template': ['error'],
         semi: ['error', 'always'],
-        'vars-on-top': ['error'],
-    },
+        'vars-on-top': ['error']
+    }
 };

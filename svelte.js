@@ -5,7 +5,7 @@ module.exports = {
         es2024: true,
         'jest/globals': true
     },
-    extends: ['eslint:recommended'],
+    extends: ['eslint:recommended', 'plugin:svelte/recommended'],
     plugins: ['es', 'jsdoc', 'jest'],
     parser: '@babel/eslint-parser',
     parserOptions: {
@@ -14,7 +14,11 @@ module.exports = {
     overrides: [
         {
             files: ['*.svelte'],
-            parser: 'svelte-eslint-parser'
+            parser: 'svelte-eslint-parser',
+            parserOptions: {
+                sourceType: 'module',
+                ecmaVersion: 2024 // in overrides env.es2024 isn't applied, so we need this here
+            }
         }
     ],
     settings: {
