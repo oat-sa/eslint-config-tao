@@ -1,6 +1,6 @@
 {
   "name": "@oat-sa/eslint-config-tao",
-  "version": "2.0.0",
+  "version": "3.0.0",
   "description": "Shareable `.eslintrc` configurations package for `oat-sa` projects.",
   "main": "index.js",
   "scripts": {
@@ -28,15 +28,16 @@
     "access": "public"
   },
   "dependencies": {
-    "@babel/eslint-parser": "^7.19.1",
-    "eslint-plugin-cypress": "^2.11.2",
+    "@babel/eslint-parser": "^7.24.1",
+    "eslint-plugin-cypress": "^2.15.2",
     "eslint-plugin-es": "^4.1.0",
-    "eslint-plugin-jest": "^27.2.1",
-    "eslint-plugin-jsdoc": "^40.1.1",
-    "eslint-plugin-svelte3": "^3.1.1"
+    "eslint-plugin-jest": "^27.9.0",
+    "eslint-plugin-jsdoc": "^48.2.3",
+    "eslint-plugin-svelte": "^2.38.0"
   },
   "devDependencies": {
-    "eslint": "^8.37.0"
+    "eslint": "^8.57.0",
+    "svelte-eslint-parser": "^0.35.0"
   },
   "peerDependencies": {
     "eslint": "^8.0.0"

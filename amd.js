@@ -1,9 +1,9 @@
 module.exports = {
     env: {
         browser: true,
-        es6: true,
         amd: true,
         qunit: true,
+        es2024: true,
         node: true
     },
     globals: {
@@ -13,9 +13,13 @@ module.exports = {
     parser: '@babel/eslint-parser',
     parserOptions: {
         sourceType: 'module',
-        ecmaVersion: 2015,
         ecmaFeatures: {
             experimentalObjectRestSpread: true
+        }
+    },
+    settings: {
+        jsdoc: {
+            mode: 'jsdoc'
         }
     },
     extends: 'eslint:recommended',
