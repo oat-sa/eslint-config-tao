@@ -1,5 +1,9 @@
 # CHANGELOG
 
+- _3.0.1_
+
+  - Added `'plugin:jest/recommended'` to the node and svelte configs so the jest plugin is well configured.
+
 - _3.0.0_
 
   - Updated `eslint-plugin-jsdoc` 8 major versions. Note that in [version 44.0](https://github.com/gajus/eslint-plugin-jsdoc/releases/tag/v44.0.0) `settings.jsdoc.mode` default value became `typescript`. So opted into the old default (`jsdoc`) to prevent changes in behavior. See note here.
