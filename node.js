@@ -14,7 +14,7 @@ module.exports = {
             mode: 'jsdoc'
         }
     },
-    extends: 'eslint:recommended',
+    extends: ['eslint:recommended', 'plugin:jest/recommended'],
     rules: {
         'array-bracket-newline': ['warn', 'consistent'],
         'arrow-body-style': ['error', 'as-needed'],

@@ -5,7 +5,7 @@ module.exports = {
         es2024: true,
         'jest/globals': true
     },
-    extends: ['eslint:recommended', 'plugin:svelte/recommended'],
+    extends: ['eslint:recommended', 'plugin:jest/recommended', 'plugin:svelte/recommended'],
     plugins: ['es', 'jsdoc', 'jest'],
     parser: '@babel/eslint-parser',
     parserOptions: {
