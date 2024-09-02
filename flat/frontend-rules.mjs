@@ -9,9 +9,7 @@ export default {
     'es/no-generators': ['error'],
     'func-call-spacing': ['error'],
     indent: ['warn', 4, { SwitchCase: 1, MemberExpression: 'off' }],
-    // jest overriden rules
-    // this customization is because Supertest tests don't use the expect assertion (they use an expect function). Example: https://github.com/oat-sa/tao-control-center/blob/develop/backend/test/app.spec.js#L28
-    'jest/expect-expect': ['error', { assertFunctionNames: ['expect', 'request.**.expect'] }],
+
     // jsdoc rules
     'jsdoc/check-alignment': ['warn'],
     'jsdoc/check-param-names': ['warn', { disableExtraPropertyReporting: true }],

@@ -14,6 +14,10 @@
 -   Removed `no-undefined` rule from the frontend rules. These 2 rules already present in the `@eslint/js` recommended rules will replace it: `no-global-assign` and `no-shadow-restricted-names`.
 -   Switching `eslint-plugin-jsdoc` `settings.jsdoc.mode` to the default `typescript` value so it helps detect jsdoc type issues
 
+#### Node config changes
+
+-   Customized `jest/expect-expect` recommended rule so it doesn't require an expect assertion if Supertest is already using the `expect` function. Example of supertest code: https://github.com/oat-sa/tao-control-center/blob/develop/backend/test/app.spec.js#L28
+
 #### Cypress config changes
 
 -   Updated `eslint-plugin-cypress` to v3.5.0. This version is compatible with flat configs
