@@ -1,6 +1,6 @@
 {
     "name": "@oat-sa/eslint-config-tao",
-    "version": "4.0.0-alpha.4",
+    "version": "3.0.1",
     "description": "Shareable eslint configurations package for `oat-sa` projects.",
     "main": "index.js",
     "exports": {
