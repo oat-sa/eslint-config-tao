@@ -1,15 +1,16 @@
+/** @type { import("eslint").Linter.Config } */
 module.exports = {
     env: {
         browser: true,
         node: true,
-        es2024: true,
-        'jest/globals': true
+        es2024: true
     },
-    extends: ['eslint:recommended', 'plugin:jest/recommended', 'plugin:svelte/recommended'],
-    plugins: ['es', 'jsdoc', 'jest'],
+    extends: ['eslint:recommended', 'plugin:svelte/recommended'],
+    plugins: ['es', 'jsdoc'],
     parser: '@babel/eslint-parser',
     parserOptions: {
-        sourceType: 'module'
+        sourceType: 'module',
+        ecmaVersion: 'latest'
     },
     overrides: [
         {
@@ -17,7 +18,7 @@ module.exports = {
             parser: 'svelte-eslint-parser',
             parserOptions: {
                 sourceType: 'module',
-                ecmaVersion: 2024 // in overrides env.es2024 isn't applied, so we need this here
+                ecmaVersion: 'latest'
             }
         }
     ],
