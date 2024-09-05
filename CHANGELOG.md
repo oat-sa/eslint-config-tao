@@ -5,14 +5,14 @@
 #### General changes
 
 -   In `package.json` use `exports` field to determine [entry points](https://nodejs.org/api/packages.html#package-entry-points) instead of the `main` field. New entry points will be used by consumer apps to import the new flat configs.
--   Updated dependencies to the last version
+-   Updated dependencies to the last version. To avoid version conflicts with other dependencies it's best if consumer projects upgrade eslint to version 8.57.0. This was already required in v3.0.0 of this package. A note about this was added to the README.
 
 #### Frontend config changes
 
 -   **BREAKING**: `@oat-sa/eslint-config-tao/svelte` config has been renamed to `@oat-sa/eslint-config-tao/svelte-base-legacy`. The jest rules were extracted to the `@oat-sa/eslint-config-tao/svelte-jest-legacy` config. This will allow to use the `svelte-base-legacy` config with Vitest rules in the new `svelte-vitest-legacy` config. See the README for more info.
 -   Added frontend flat configs under `@oat-sa/eslint-config-tao/flat/svelte`. As a side effect of this change, cosumer apps that use `flat/svelte-base` with the `vitest` config won't need to install any jest or babel packages. Consumers with eslint 9 can now use this package.
--   Removed `no-undefined` rule from the frontend rules. These 2 rules already present in the `@eslint/js` recommended rules will replace it: `no-global-assign` and `no-shadow-restricted-names`.
 -   Switching `eslint-plugin-jsdoc` `settings.jsdoc.mode` to the default `typescript` value so it helps detect jsdoc type issues
+-   Some rules have been removed from the `frontend-rules.mjs` list since they were duplicates (already added in the recommended rules of some plugin). The `no-undefined` rule was replaced by `no-global-assign` and `no-shadow-restricted-names` that allow us to use `undefined`.
 
 #### Node config changes
 
@@ -30,6 +30,7 @@
 
 ## _3.0.0_
 
+-   You should update to at least eslint 8.57.0 to use this version since the updated configs now use the `es2024` environment.
 -   Updated `eslint-plugin-jsdoc` 8 major versions. Note that in [version 44.0](https://github.com/gajus/eslint-plugin-jsdoc/releases/tag/v44.0.0) `settings.jsdoc.mode` default value became `typescript`. So opted into the old default (`jsdoc`) to prevent changes in behavior. See note here.
 -   `@babel/eslint-parser` was updated to a compatible version
 -   `eslint-plugin-jest` was updated to a compatible version.

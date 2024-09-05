@@ -12,10 +12,6 @@ import eslintPluginSvelte from 'eslint-plugin-svelte';
 const configs = {};
 
 configs['flat/svelte-base'] = [
-    {
-        name: 'tao:ignore-folders',
-        ignores: ['public', 'dist', 'coverage']
-    },
     js.configs.recommended,
     jsdoc.configs['flat/recommended'],
     ...eslintPluginSvelte.configs['flat/recommended'],

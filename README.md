@@ -105,9 +105,9 @@ If you want to stay on eslint v8.57 (below v8.57 flat config doesn't work) but u
  "lint": "ESLINT_USE_FLAT_CONFIG=true eslint .
 ```
 
-## Migrating to version 4.0.0:
+## Common issues migrating to version 4.0.0:
 
-If you see this error
+### 1- If you see this error: ERR_PACKAGE_PATH_NOT_EXPORTED
 
 ```bash
 Error [ERR_PACKAGE_PATH_NOT_EXPORTED]: Package subpath './svelte' is not defined by "exports" in /[some_path]/node_modules/@oat-sa/eslint-config-tao/package.json
@@ -131,6 +131,24 @@ or
 ```
 extends: ['@oat-sa/eslint-config-tao/svelte-vitest-legacy'],
 ```
+
+### 2- If you use the cypress config:
+
+Make sure that you use this order extending configs (the svelte config should be after the cypress config):
+
+```
+extends: ['@oat-sa/eslint-config-tao/cypress', '@oat-sa/eslint-config-tao/svelte-jest-legacy']
+```
+
+Otherwise, you'll get this error in every `.svelte` file:
+
+```
+1:0  error  Parsing error: This experimental syntax requires enabling one of the following parser plugin(s): "jsx", "flow", "typescript". (1:0)
+```
+
+### 3- If you get dependency conflicts when instaling the package
+
+If you are using eslint 8, you will need to update it to version 8.57.0 in order to avoid those dependency issues when running `npm install`. Also, configs in this package use `es2024` and this is available in eslint 8.57.0.
 
 ## Change log
 
