@@ -6,6 +6,10 @@ export default [
     {
         name: 'tao:jest',
         files: testFilesGlob,
-        ...jest.configs['flat/recommended']
+        ...jest.configs['flat/recommended'],
+        rules: {
+            'jest/expect-expect': ['off'],
+            'jest/no-done-callback': ['off'],
+        }
     }
 ];

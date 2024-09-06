@@ -4,5 +4,9 @@ module.exports = {
         'jest/globals': true
     },
     extends: ['./svelte-base-legacy', 'plugin:jest/recommended'],
-    plugins: ['jest']
+    plugins: ['jest'],
+    rules: {
+        'jest/expect-expect': ['off'],
+        'jest/no-done-callback': ['off'],
+    }
 };
