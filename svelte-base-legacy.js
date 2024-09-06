@@ -51,7 +51,7 @@ module.exports = {
         'no-alert': ['error'],
         'no-caller': ['error'],
         'no-confusing-arrow': ['error', { allowParens: false }],
-        'no-console': ['error'],
+        'no-console': ['error', { allow: ['warn', 'error'] }],
         'no-debugger': ['error'],
         'no-duplicate-imports': ['error'],
         'no-eval': ['error'],
