@@ -4,7 +4,7 @@ export default {
     eqeqeq: ['error', 'smart'],
     'no-alert': ['error'],
     'no-caller': ['error'],
-    'no-console': ['error'],
+    'no-console': ['error', { allow: ['warn', 'error'] }],
     'no-duplicate-imports': ['error'],
     'no-eval': ['error'],
     'no-extend-native': ['error'],
