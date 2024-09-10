@@ -26,6 +26,9 @@ module.exports = {
         'es/no-generators': ['error'],
         'func-call-spacing': ['error'],
         indent: ['warn', 4, { SwitchCase: 1, MemberExpression: 'off' }],
+        // the below jest rule customization is because Supertest tests don't use the expect assertion (they use an expect function). See rule details here https://github.com/jest-community/eslint-plugin-jest/blob/main/docs/rules/expect-expect.md
+        // Example of supertest code: https://github.com/oat-sa/tao-control-center/blob/develop/backend/test/app.spec.js#L28
+        'jest/expect-expect': ['error', { assertFunctionNames: ['expect', 'request.**.expect'] }],
         'jsdoc/check-alignment': ['warn'],
         'jsdoc/check-param-names': ['warn', { disableExtraPropertyReporting: true }],
         'jsdoc/require-param': ['warn'],
