@@ -1,45 +1,58 @@
 {
-  "name": "@oat-sa/eslint-config-tao",
-  "version": "3.0.2",
-  "description": "Shareable `.eslintrc` configurations package for `oat-sa` projects.",
-  "main": "index.js",
-  "scripts": {
-    "lint": "eslint -c .eslintrc.js *.js"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/oat-sa/eslint-config-tao.git"
-  },
-  "keywords": [
-    "tao",
-    "oat",
-    "eslint"
-  ],
-  "author": {
-    "name": "OAT SA",
-    "url": "https://taotesting.com"
-  },
-  "license": "GPL-2.0-only",
-  "bugs": {
-    "url": "https://github.com/oat-sa/eslint-config-tao/issues"
-  },
-  "homepage": "https://github.com/oat-sa/eslint-config-tao#readme",
-  "publishConfig": {
-    "access": "public"
-  },
-  "dependencies": {
-    "@babel/eslint-parser": "^7.24.1",
-    "eslint-plugin-cypress": "^2.15.2",
-    "eslint-plugin-es": "^4.1.0",
-    "eslint-plugin-jest": "^27.9.0",
-    "eslint-plugin-jsdoc": "^48.2.3",
-    "eslint-plugin-svelte": "^2.38.0"
-  },
-  "devDependencies": {
-    "eslint": "^8.57.0",
-    "svelte-eslint-parser": "^0.35.0"
-  },
-  "peerDependencies": {
-    "eslint": "^8.0.0"
-  }
+    "name": "@oat-sa/eslint-config-tao",
+    "version": "4.0.0",
+    "description": "Shareable eslint configurations package for `oat-sa` projects.",
+    "main": "index.js",
+    "exports": {
+        ".": "./index.js",
+        "./amd": "./amd.js",
+        "./node": "./node.js",
+        "./cypress": "./cypress.js",
+        "./svelte-base-legacy": "./svelte-base-legacy.js",
+        "./svelte-jest-legacy": "./svelte-jest-legacy.js",
+        "./svelte-vitest-legacy": "./svelte-vitest-legacy.js",
+        "./flat/svelte": "./flat/svelte.mjs"
+    },
+    "scripts": {
+        "lint": "eslint ."
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/oat-sa/eslint-config-tao.git"
+    },
+    "keywords": [
+        "tao",
+        "oat",
+        "eslint"
+    ],
+    "author": {
+        "name": "OAT SA",
+        "url": "https://taotesting.com"
+    },
+    "license": "GPL-2.0-only",
+    "bugs": {
+        "url": "https://github.com/oat-sa/eslint-config-tao/issues"
+    },
+    "homepage": "https://github.com/oat-sa/eslint-config-tao#readme",
+    "publishConfig": {
+        "access": "public"
+    },
+    "dependencies": {
+        "@babel/eslint-parser": "^7.25.1",
+        "@eslint/js": "^9.9.1",
+        "@vitest/eslint-plugin": "^1.1.0",
+        "eslint-plugin-cypress": "^3.5.0",
+        "eslint-plugin-es": "^4.1.0",
+        "eslint-plugin-jest": "^28.8.2",
+        "eslint-plugin-jsdoc": "^50.2.2",
+        "eslint-plugin-svelte": "^2.43.0"
+    },
+    "devDependencies": {
+        "eslint": "^8.57.0",
+        "globals": "^15.9.0",
+        "svelte-eslint-parser": "^0.41.0"
+    },
+    "peerDependencies": {
+        "eslint": ">=8"
+    }
 }

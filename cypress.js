@@ -2,12 +2,14 @@ module.exports = {
     env: {
         browser: true,
         node: true,
-        es2024: true
+        es2024: true,
+        'cypress/globals': true
     },
     plugins: ['es'],
     parser: '@babel/eslint-parser',
     parserOptions: {
-        sourceType: 'module'
+        sourceType: 'module',
+        ecmaVersion: 'latest'
     },
     overrides: [],
     settings: {},
